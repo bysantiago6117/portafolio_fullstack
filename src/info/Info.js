@@ -20,7 +20,7 @@ export const info = {
     miniBio: [
     {
         emoji: '☕',
-        text: 'impulsado por café'
+        text: 'Impulsado por café'
     },
     {
         emoji: '🌎',
@@ -36,11 +36,6 @@ export const info = {
     }
     ],
     socials: [
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
         {
             link: "https://github.com/bysantiago6117",
             icon: "fa fa-github",
