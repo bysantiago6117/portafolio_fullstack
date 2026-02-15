@@ -1,0 +1,198 @@
+@import "../../variables.modules";
+
+.experienceContainer {
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+
+  @media only screen and (min-width: 940px) {
+    padding: 3rem 2rem;
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, $blue 0%, $pink 100%);
+  transform: translateY(-50%);
+  display: none; 
+
+  @media only screen and (min-width: 940px) {
+    display: block;
+  }
+}
+
+.titleContainer {
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+  
+  @media only screen and (min-width: 940px) {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+
+  
+  @media only screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    font-size: 3rem;
+  }
+}
+
+.titleUnderline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, $blue 0%, $pink 100%);
+  margin: 0 auto; /* 👈 Esto centra la línea */
+  border-radius: 2px;
+  
+  @media only screen and (min-width: 940px) {
+    width: 80px;
+  }
+}
+
+
+.titleUnderline {
+  width: 60px;
+  height: 4px; 
+  background: -webkit-linear-gradient(rgb(0,255,164), rgb(166,104,255));
+  margin: 0 auto; 
+  border-radius: 2px;
+  
+  @media only screen and (min-width: 940px) {
+    width: 80px;
+  }
+}
+
+
+.timelineItems {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (min-width: 940px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+.timelineItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $blue;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px $blue;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+
+  @media only screen and (min-width: 940px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  width: 100%;
+  min-height: 160px;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  @media only screen and (min-width: 940px) {
+    padding: 2.5rem 1.75rem;
+    min-height: 180px;
+  }
+}
+
+.position {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+
+  @media only screen and (min-width: 940px) {
+    font-size: 1.25rem;
+  }
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $blue;
+  margin-bottom: 0.5rem;
+
+  @media only screen and (min-width: 940px) {
+    font-size: 1.25rem;
+  }
+}
+
+.period {
+  font-size: 0.8750rem;
+  color: $black;
+  opacity: 0.6;
+  font-weight: 500;
+
+  @media only screen and (min-width: 940px) {
+    font-size: 0.880rem;
+  }
+}
+
+// Dark mode
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: #1a1a1a;
+  }
+
+  .position,
+  .period {
+    color: #e0e0e0;
+  }
+
+  .dot {
+    border-color: #0a0a0a;
+  }
+}

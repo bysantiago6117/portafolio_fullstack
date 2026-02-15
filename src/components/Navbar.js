@@ -9,12 +9,12 @@ import { singlePage } from '../info/Info';
 
 const links = [
     {
-        name: 'Home',
+        name: 'Inicio',
         to: '',
         active: 'home'
     },
     {
-        name: 'About Me',
+        name: 'Acerca de mi',
         to: 'about',
         active: 'about'
     },
@@ -24,15 +24,14 @@ const links = [
         to: '',
         active: 'home'
     },
-    {
-        name: 'Portfolio',
-        to: 'portfolio',
-        active: 'portfolio'
-    }
+     {
+    name: 'Experiencia',
+    to: 'experience',
+    active: 'experience'
+  }
 ]
 
-// This function is used to create a scroll offset to compensate for the navbar
-// when you click on the nav buttons to scroll down.
+
 const scrollWidthOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -80; 
