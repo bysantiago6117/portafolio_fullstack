@@ -1,8 +1,6 @@
 import Home from "./home/Home";
 import About from "./about/About";
-import Portfolio from "./portfolio/Portfolio";
 import Expertise from "./exterpise/Exterpise";
-import React from 'react';
 import { Box } from "@mui/material";
 import Experience from "./experience/Experience";
 import Projects from "./projects/Projects";
